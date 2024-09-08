@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">#July2024 App</string>
+    <string name="intro_title">বল বীর <font color='#E3B320'>চির উন্নত \nমম শির</font> </string>
+    <string name="intro_des">এমন দেশটি কোথাও খুঁজে পাবে নাকো তুমি, সকল দেশের রানী সে যে-আমার জন্মভূমি।</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_hint">Find your information...</string>
+    <string name="see_all">see all</string>
+    <string name="anti_dis_student">Anti-Discrimination Student Movement</string>
+    <string name="martyr_text">Martyr</string>
+    <string name="gallary_text">Tragic Memory Gallery</string>
+    <string name="has_martyr_text">has become a martyr</string>
+    <string name="has_martyr_count_text">650+</string>
+    <string name="has_attck_martyr_text">has been injured</string>
+    <string name="has_injurd_count_text">30,000+</string>
+    <string name="top_news_text">Top News</string>
+    <string name="about_martyr_txt">Add information about new martyrs</string>
+    <string name="about_martyr_txt2">Add information about new injured individuals</string>
+    <string name="about_martyr_txt3">Add news related to the movement</string>
+    <string name="hour_txt">2 hours ago</string>
+    <string name="soruce_txt"> <font color='#f2bf24' >সোর্স :</font> জাগো নিউজ</string>
+    <string name="martyr_All_txt"> সকল শহীদ <font color='#D1D1D1' >(৬৫০+)</font> </string>
+    <string name="source_news_txt"><font color='#f2bf24' >সোর্স:</font> দৈনিক প্রথম আলো </string>
+
+
+
+
+
+</resources>

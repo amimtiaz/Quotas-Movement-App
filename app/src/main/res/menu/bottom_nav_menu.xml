@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/home_inactive"
+        android:title="হোম"
+        />
+
+    <item
+        android:id="@+id/video_icon"
+        android:icon="@drawable/inactive_video_icon"
+        android:title="ছবি"
+        />
+
+    <item
+        android:id="@+id/add_icon"
+        android:icon="@drawable/add_inacitive"
+        android:title="তথ্য জমা দিন"
+        />
+
+
+    <item
+        android:id="@+id/list_icon"
+        android:icon="@drawable/list_inactive"
+        android:title="তালিকা"
+        />
+
+
+    <item
+        android:id="@+id/search_icon"
+        android:icon="@drawable/news_icon"
+        android:title="নিউজ"
+        />
+
+
+</menu>

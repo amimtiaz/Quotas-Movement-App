@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--custom colors-->
+    <color name="primary_color">#212121</color>
+    <color name="secondary_color">#303030</color>
+    <color name="yellow_color">#E3B320</color>
+    <color name="soft_yellow_color">#F3C024</color>
+    <color name="transparent_color">#00000000</color>
+
+
+
+</resources>
