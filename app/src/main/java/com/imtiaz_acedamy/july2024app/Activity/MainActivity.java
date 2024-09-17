@@ -197,8 +197,6 @@ public class MainActivity extends AppCompatActivity {
         binding.bottomNavigationView.getMenu().findItem(R.id.list_icon).setIcon(R.drawable.list_inactive);
     }
 
-
-
     private void showBottomSheetDialog() {
 
         View view = LayoutInflater.from(this).inflate(R.layout.bottom_sheet_layout, null);
@@ -229,12 +227,10 @@ public class MainActivity extends AppCompatActivity {
         bottomSheetDialog.show();
     }
 
-
     @Override
     public void onBackPressed() {
         super.onBackPressed();
         finish();
-
     }
 
     private Runnable sliderRunnable = new Runnable() {

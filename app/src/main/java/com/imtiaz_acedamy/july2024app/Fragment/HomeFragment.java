@@ -64,27 +64,24 @@ public class HomeFragment extends Fragment {
     ArrayList<NewsItems> list3;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
 
         autoSlideImages();
         initNewsInit();
         sohidInit();
 
-//        SharedPreferences preferences = requireContext().getSharedPreferences("app_prefs", Context.MODE_PRIVATE);
-//        if (!preferences.contains("selected_language")) {
-//            saveLanguagePreference("bn"); // Set default language to Bengali
-//            setLocale("bn"); // Apply default language settings
-//        } else {
-//            String selectedLanguage = preferences.getString("selected_language", "bn");
-//            setLocale(selectedLanguage); // Apply saved language preference
-//        }
-//
-//
-//        switchBtn();
-
-
+        //        SharedPreferences preferences = requireContext().getSharedPreferences("app_prefs", Context.MODE_PRIVATE);
+        //        if (!preferences.contains("selected_language")) {
+        //            saveLanguagePreference("bn"); // Set default language to Bengali
+        //            setLocale("bn"); // Apply default language settings
+        //        } else {
+        //            String selectedLanguage = preferences.getString("selected_language", "bn");
+        //            setLocale(selectedLanguage); // Apply saved language preference
+        //        }
+        //
+        //
+        //        switchBtn();
 
         return binding.getRoot();
     }
@@ -236,104 +233,101 @@ public class HomeFragment extends Fragment {
         editor.apply();
     }
 
-//    private void switchBtn(){
-//
-//        // Restore button state
-//        SharedPreferences preferences = requireContext().getSharedPreferences("app_prefs", MODE_PRIVATE);
-//        String selectedLanguage = preferences.getString("selected_language", "bn");
-//
-//
-//        if ("bn".equals(selectedLanguage)) {
-//            binding.bnBtn.setBackgroundResource(R.drawable.flip_en_bn_bg);
-//            binding.bnBtn.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.yellow_color));
-//            binding.enBtn.setBackgroundResource(R.color.transparent_color);
-//            binding.enBtn.setBackgroundTintMode(null);
-//            binding.enBtn.setTextColor(getResources().getColor(R.color.white));
-//            binding.bnBtn.setTextColor(getResources().getColor(R.color.primary_color));
-//
-//            //setLocale("bn");
-//
-//        } else {
-//            binding.enBtn.setBackgroundResource(R.drawable.flip_en_bn_bg);
-//            binding.enBtn.setTextColor(getResources().getColor(R.color.primary_color));
-//            binding.bnBtn.setTextColor(getResources().getColor(R.color.white));
-//            binding.bnBtn.setBackgroundResource(R.color.transparent_color);
-//
-//            //setLocale("en");
-//        }
-//
-//        binding.bnBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                try {
-//                    binding.bnBtn.setBackgroundResource(R.drawable.flip_en_bn_bg);
-//                    binding.bnBtn.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.yellow_color));
-//                    binding.enBtn.setBackgroundResource(R.color.transparent_color);
-//                    binding.enBtn.setBackgroundTintMode(null);
-//                    binding.enBtn.setTextColor(getResources().getColor(R.color.white));
-//                    binding.bnBtn.setTextColor(getResources().getColor(R.color.primary_color));
-//
-//                    saveLanguagePreference("bn");
-//                    setLocale("bn");
-//                    requireActivity().recreate();
-//
-//
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        });
-//
-//        binding.enBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                try {
-//                    binding.enBtn.setBackgroundResource(R.drawable.flip_en_bn_bg);
-//                    binding.enBtn.setTextColor(getResources().getColor(R.color.primary_color));
-//                    binding.bnBtn.setTextColor(getResources().getColor(R.color.white));
-//                    binding.bnBtn.setBackgroundResource(R.color.transparent_color);
-//
-//                    saveLanguagePreference("en");
-//
-//                    setLocale("en");
-//                    requireActivity().recreate();
-//
-//
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        });
-//    }
-//
-//    private void setLocale(String langCode) {
-//        Locale locale = new Locale(langCode);
-//        Locale.setDefault(locale);
-//
-//        Configuration config = new Configuration();
-//        config.setLocale(locale);
-//
-//        // Update resources with new locale
-//        Context context = requireContext(); // Use the fragment's context
-//        Resources resources = context.getResources();
-//        DisplayMetrics displayMetrics = resources.getDisplayMetrics();
-//        resources.updateConfiguration(config, displayMetrics);
-//
-//        if (getActivity() != null) {
-//            getActivity().recreate();
-//
-//        }
-//    }
-//
-//    private void saveLanguagePreference(String langCode) {
-//        SharedPreferences preferences = getActivity().getSharedPreferences("app_prefs", MODE_PRIVATE);
-//        SharedPreferences.Editor editor = preferences.edit();
-//        editor.putString("selected_language", langCode);
-//        editor.apply();
-//    }
-
-
-
+    //    private void switchBtn(){
+    //
+    //        // Restore button state
+    //        SharedPreferences preferences = requireContext().getSharedPreferences("app_prefs", MODE_PRIVATE);
+    //        String selectedLanguage = preferences.getString("selected_language", "bn");
+    //
+    //
+    //        if ("bn".equals(selectedLanguage)) {
+    //            binding.bnBtn.setBackgroundResource(R.drawable.flip_en_bn_bg);
+    //            binding.bnBtn.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.yellow_color));
+    //            binding.enBtn.setBackgroundResource(R.color.transparent_color);
+    //            binding.enBtn.setBackgroundTintMode(null);
+    //            binding.enBtn.setTextColor(getResources().getColor(R.color.white));
+    //            binding.bnBtn.setTextColor(getResources().getColor(R.color.primary_color));
+    //
+    //            //setLocale("bn");
+    //
+    //        } else {
+    //            binding.enBtn.setBackgroundResource(R.drawable.flip_en_bn_bg);
+    //            binding.enBtn.setTextColor(getResources().getColor(R.color.primary_color));
+    //            binding.bnBtn.setTextColor(getResources().getColor(R.color.white));
+    //            binding.bnBtn.setBackgroundResource(R.color.transparent_color);
+    //
+    //            //setLocale("en");
+    //        }
+    //
+    //        binding.bnBtn.setOnClickListener(new View.OnClickListener() {
+    //            @Override
+    //            public void onClick(View v) {
+    //                try {
+    //                    binding.bnBtn.setBackgroundResource(R.drawable.flip_en_bn_bg);
+    //                    binding.bnBtn.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.yellow_color));
+    //                    binding.enBtn.setBackgroundResource(R.color.transparent_color);
+    //                    binding.enBtn.setBackgroundTintMode(null);
+    //                    binding.enBtn.setTextColor(getResources().getColor(R.color.white));
+    //                    binding.bnBtn.setTextColor(getResources().getColor(R.color.primary_color));
+    //
+    //                    saveLanguagePreference("bn");
+    //                    setLocale("bn");
+    //                    requireActivity().recreate();
+    //
+    //
+    //                } catch (Exception e) {
+    //                    e.printStackTrace();
+    //                }
+    //            }
+    //        });
+    //
+    //        binding.enBtn.setOnClickListener(new View.OnClickListener() {
+    //            @Override
+    //            public void onClick(View v) {
+    //                try {
+    //                    binding.enBtn.setBackgroundResource(R.drawable.flip_en_bn_bg);
+    //                    binding.enBtn.setTextColor(getResources().getColor(R.color.primary_color));
+    //                    binding.bnBtn.setTextColor(getResources().getColor(R.color.white));
+    //                    binding.bnBtn.setBackgroundResource(R.color.transparent_color);
+    //
+    //                    saveLanguagePreference("en");
+    //
+    //                    setLocale("en");
+    //                    requireActivity().recreate();
+    //
+    //
+    //                } catch (Exception e) {
+    //                    e.printStackTrace();
+    //                }
+    //            }
+    //        });
+    //    }
+    //
+    //    private void setLocale(String langCode) {
+    //        Locale locale = new Locale(langCode);
+    //        Locale.setDefault(locale);
+    //
+    //        Configuration config = new Configuration();
+    //        config.setLocale(locale);
+    //
+    //        // Update resources with new locale
+    //        Context context = requireContext(); // Use the fragment's context
+    //        Resources resources = context.getResources();
+    //        DisplayMetrics displayMetrics = resources.getDisplayMetrics();
+    //        resources.updateConfiguration(config, displayMetrics);
+    //
+    //        if (getActivity() != null) {
+    //            getActivity().recreate();
+    //
+    //        }
+    //    }
+    //
+    //    private void saveLanguagePreference(String langCode) {
+    //        SharedPreferences preferences = getActivity().getSharedPreferences("app_prefs", MODE_PRIVATE);
+    //        SharedPreferences.Editor editor = preferences.edit();
+    //        editor.putString("selected_language", langCode);
+    //        editor.apply();
+    //    }
 
     private void sohidInit() {
         list = new ArrayList<>();
@@ -425,7 +419,6 @@ public class HomeFragment extends Fragment {
     }
 
 
-
     private void initNewsInit(){
         list3 = new ArrayList<>();
 
@@ -482,7 +475,6 @@ public class HomeFragment extends Fragment {
 
 
     }
-
 
     private void autoSlideImages() {
 
@@ -542,8 +534,6 @@ public class HomeFragment extends Fragment {
         // Start the auto-slide
         sliderHandler.postDelayed(sliderRunnable, 3000);
     }
-
-
 
     private Runnable sliderRunnable = new Runnable() {
         @Override
